@@ -33,7 +33,7 @@ int main()
     
     for(i=0; i<5; i++)
     {
-        printf("litros por 1000km rodados: %d \n", consumo[i]*1000);
+        printf("litros por 1000km rodados: %d \n", 1000/consumo[i]);
     }
     return 0;
     
