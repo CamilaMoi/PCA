@@ -1,19 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int matriz[3][3];
-    int k;
-    int linha, coluna;
+    int matriz[3][3], int num, linha, coluna;
 
-    printf("Digite os valores da matriz 3 x 3: \n");
+    printf("matriz 3 x 3: \n");
     for (linha = 0; linha < 3; linha++) {
         for (coluna = 0; coluna < 3; coluna++) {
             scanf("%d", &matriz[linha][coluna]);
         }
     }
 
-    printf("Digite o valor do escalar k: \n");
-    scanf("%d", &k);
+    printf("num: \n");
+    scanf("%d", &num);
 
     printf("Matriz original: \n");
     for (linha = 0; linha < 3; linha++) {
@@ -23,10 +21,10 @@ int main() {
         printf("\n");
     }
 
-    printf("Matriz multiplicada por k: \n");
+    printf("Matriz multiplicada pelo num: ");
     for (linha = 0; linha < 3; linha++) {
         for (coluna = 0; coluna < 3; coluna++) {
-            matriz[linha][coluna] = matriz[linha][coluna] * k;
+            matriz[linha][coluna] = matriz[linha][coluna] * num;
             printf("%d ", matriz[linha][coluna]);
         }
         printf("\n");
