@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int decimal(int num) {
+int trans(int num) {
     int e = 0, resto = 0, dec = 0;
     printf("%d = ", num);
     while (num > 0) {
@@ -15,8 +15,8 @@ int decimal(int num) {
 
 int main(){
     int num;
-    printf("digite o numero binario= ");
+    printf("num= ");
     scanf("%d", &num);
-	decimal(num);
+	trans(num);
     return 0;
 }
