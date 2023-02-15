@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
-
-struct Aluno {
+ Aluno {
 char nome[120];
 char sobrenome[120];
 };
 
-struct Equipe {
-struct Aluno integrantes[4];
+ Equipe { Aluno integrantes[4];
 };
 
 int main() {
-struct Equipe equipes[20];
+ Equipe equipes[20];
 int numeroDeEquipes = 0;
 
 
@@ -27,7 +25,6 @@ while (numeroDeEquipes < 20) {
     numeroDeEquipes++;
 }
 
-// Procurar equipe de um determinado aluno
 char nomeDoAluno[120];
 printf("Informe o nome do aluno: ");
 scanf("%s", nomeDoAluno);
